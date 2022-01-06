@@ -72,9 +72,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void run() {
                 String message = "我是UDP客户端啊,你是UDP服务端吗?";
                 CommonBean commonBean = new CommonBean();
-//                commonBean.setAction();
-//                commonBean.setSeat(104010);
-//                commonBean.setId();
                 mUdpClient.sendMessage(message, "GBK");
                 String result = mUdpClient.receiveMessage("GBK");
 
