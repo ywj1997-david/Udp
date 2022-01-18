@@ -58,10 +58,14 @@ public class UdpClient {
             } else {
                 data = message.getBytes();
             }
+            byte g_enkey = 10;
+            for (int i = 0; i < data.length; i++) {
+                data[i] = (byte) (data[i] + g_enkey);
+                data[i] = (byte) ~data[i];
+            }
+
             DatagramPacket sendPacket = new DatagramPacket(data, data.length, InetAddress.getByName(ip), port);
             mDatagramSocket.send(sendPacket);
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -74,18 +78,27 @@ public class UdpClient {
     public String receiveMessage(String charsetName) {
         String info = null;
         try {
-            byte inBuff[] = new byte[mDatagramSocket.getReceiveBufferSize()];
-            DatagramPacket datagramPacket = new DatagramPacket(inBuff, inBuff.length);
+            byte[] inBuff = new byte[1024];
+            DatagramPacket datagramPacket = new DatagramPacket(inBuff, 1024);
+            if (mDatagramSocket == null) {
+                return "";
+            }
             mDatagramSocket.receive(datagramPacket);
-            byte data[] = datagramPacket.getData();
+            int len = datagramPacket.getLength();
+            byte[] data = datagramPacket.getData();
+
+            byte g_enkey = 10;
+
+            for (int i = 0; i < datagramPacket.getLength(); i++) {
+                data[i] = (byte) ~data[i];
+                data[i] = (byte) (data[i] - g_enkey);
+            }
 
             if (!TextUtils.isEmpty(charsetName)) {
-                info = new String(data, Charset.forName(charsetName));
+                info = new String(data, 0, len);
             } else {
                 info = new String(data);
             }
-        } catch (SocketException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

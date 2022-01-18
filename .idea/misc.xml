@@ -3,7 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/drawable/ic_arrow.xml" value="0.25729166666666664" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/drawable/ic_back.xml" value="0.25729166666666664" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/drawable/ic_back2.xml" value="0.25729166666666664" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/drawable/ic_up_gray.xml" value="0.25729166666666664" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_advance.xml" value="0.24114583333333334" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_bill.xml" value="0.24114583333333334" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_customer_state.xml" value="0.24114583333333334" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_customer_tracking.xml" value="0.24114583333333334" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_input.xml" value="0.264" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_login.xml" value="0.4" />
         <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_order_tracking.xml" value="0.24114583333333334" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_service.xml" value="0.264" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/activity_tcp.xml" value="0.22592592592592592" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/item_bill.xml" value="0.24114583333333334" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/item_child_provider.xml" value="0.24114583333333334" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/item_customer_state.xml" value="0.24114583333333334" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/item_customer_tracking.xml" value="0.264" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/item_parent_provider.xml" value="0.24114583333333334" />
+        <entry key="..\:/KotlinAndroidProgects/Udp/app/src/main/res/layout/layout_base_toolbar.xml" value="0.24114583333333334" />
       </map>
     </option>
   </component>

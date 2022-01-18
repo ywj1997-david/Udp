@@ -12,7 +12,7 @@ package com.example.udp;
 public class CommonBean {
     private String action;
     private int seat;
-    private int id;
+    private String id;
 
     public String getAction() {
         return action;
@@ -30,11 +30,11 @@ public class CommonBean {
         this.seat = seat;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 }
